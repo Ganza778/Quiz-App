@@ -1,36 +1,16 @@
-// In App.js or a parent component
-import React, { useState } from "react";
-import QuizStart from "./components/QuizStart";  // Import the QuizStart component
-import Quiz from "./components/Quiz";            // Import the Quiz component
-import ScoreSummary from "./components/ScoreSummary";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-const App = () => {
-  const [quizState, setQuizState] = useState("start"); // Can be 'start', 'quiz', or 'score'
-  const [quizData, setQuizData] = useState(null);
-  const [score, setScore] = useState(0);
-
-  const handleStartQuiz = (numQuestions, category, difficulty) => {
-    setQuizState("quiz");
-    // Fetch questions here and set the quizData
-  };
-
-  const handleFinishQuiz = (finalScore) => {
-    setScore(finalScore);
-    setQuizState("score");
-  };
-
-  const handleRetakeQuiz = () => {
-    setQuizState("start");
-    setScore(0);
-  };
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div className="app-container">
-      {quizState === "start" && <QuizStart onStartQuiz={handleStartQuiz} />}
-      {quizState === "quiz" && <Quiz numQuestions={10} category={9} difficulty="medium" onFinishQuiz={handleFinishQuiz} />}
-      {quizState === "score" && <ScoreSummary score={score} totalQuestions={10} onRetakeQuiz={handleRetakeQuiz} />}
-    </div>
-  );
-};
+    <>
+      <h1></h1>
+    </>
+  )
+}
 
-export default App;
+export default App
