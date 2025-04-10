@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Main container for the app */
 .start-container, .quiz-container, .result-container {
   background-color: white;
   border-radius: 8px;
@@ -37,7 +36,7 @@ h1 {
   text-align: center;
 }
 
-/* Styling for the start container */
+
 .start-container {
   text-align: center;
   display: block;
@@ -57,7 +56,7 @@ button {
   font-size: 1rem;
   padding: 10px 20px;
   margin-top: 15px;
-  background-color: #4CAF50;
+  background-color: yellow;
   color: white;
   border: none;
   border-radius: 4px;
@@ -71,7 +70,7 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Quiz question display */
+
 .quiz-container {
   display: none;
 }
