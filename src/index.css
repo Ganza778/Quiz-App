@@ -29,7 +29,7 @@ h1 {
 .start-container, .quiz-container, .result-container {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 30px;
   width: 100%;
   max-width: 600px;
@@ -102,7 +102,6 @@ h2 {
   background-color: #2980b9;
 }
 
-/* Loading and error messages */
 .loading, .error {
   font-size: 1rem;
   color: #e74c3c;
@@ -113,7 +112,7 @@ h2 {
   display: none;
 }
 
-/* Result display */
+
 .result-container {
   display: none;
 }
@@ -125,13 +124,12 @@ h2 {
   margin: 20px 0;
 }
 
-/* Score display */
+
 #score {
   font-size: 1.2rem;
   margin: 20px 0;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
   h1 {
       font-size: 2rem;
